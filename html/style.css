@@ -1,0 +1,31 @@
+.flex {display: flex;}
+.around {justify-content: space-around;}
+.between {justify-content: space-between;}
+
+.menu {
+    background-color: seagreen;
+}
+
+.menu_1 {
+    min-width: 600px;
+    background-color: red;
+}
+
+.menu_2 {
+    min-width: 300px;
+    background-color: red;
+}
+
+.menu_item {
+    padding: 10px;
+    text-align: center;
+}
+
+.dropmenu {
+    background-color: darkorange;
+    display: none;
+}
+
+.hovergreen:hover {
+    color: greenyellow;
+}
