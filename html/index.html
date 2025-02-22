@@ -11,7 +11,7 @@
     <header>
         <div style="min-width: 900px;">
             <div class="menu flex around">
-                <div class="menu_1 flex between">
+                <div class="menu_left flex between">
                     <div class="menu_item">
                         <span>NAVER</span>
                         <span>Developers</span>
@@ -19,31 +19,81 @@
                     <div class="menu_item hovergreen" id="products">Products</div>
                     <div class="menu_item hovergreen" id="documents">Documents</div>
                     <div class="menu_item hovergreen" id="application">Application</div>
-                    <div class="menu_item hovergreen">Support</div>
+                    <div class="menu_item hovergreen" id="support">Support</div>
                     <div class="menu_item hovergreen">Forum</div>
                 </div>
     
-                <div class="menu_2 flex between">
+                <div class="menu_right flex between">
                     <div class="menu_item">API 상태</div>
-                    <div class="menu_item">Search Here</div>
+                    <div class="menu_item">
+                        <input type="text" placeholder="Sreach here">
+                    </div>
                     <div class="menu_item">로그인</div>
                 </div>
             </div>
             <div class="dropmenu flex around" id="dropmenu">
-                <div id="dropmenu_1">
+                <div id="dropmenu_products">
                     <div class="menu_item">a</div>
                 </div>
 
-                <div id="dropmenu_2">
+                <div id="dropmenu_documents">
                     <div class="menu_item">b</div>
                 </div>
 
-                <div id="dropmenu_3">
+                <div id="dropmenu_application">
                     <div class="menu_item">c</div>
+                </div>
+
+                <div id="dropmenu_support">
+                    <div class="menu_item">d</div>
                 </div>
             </div>
         </div>
         
     </header>
+
+    <main>
+        <div class="page_1">
+            
+        </div>
+
+        <div class="page_2 center flex">
+            <div class="flex">
+                <div class="page_2_item">CLOVA</div>
+                <div class="page_2_item">네이버 로그인</div>
+                <div class="page_2_item">서비스 API</div>
+                <div class="page_2_item">네이버 클라우드 플랫폼</div>
+            </div>
+        </div>
+
+        <div class="page_3 center flex">
+            <div class="column flex around">
+                <div class="flex">
+                    <div class="page_3_item_1 flex column">
+                        <div class="page_3_item_1_item_image"></div>
+                        <div class="page_3_item_1_item_text">[네이버 로그인] TLS 1.2 이상 업그레이드 권장 안내</div>
+                    </div>
+                    <div class="page_3_item_1 flex column">
+                        <div class="page_3_item_1_item_image"></div>
+                        <div class="page_3_item_1_item_text">[네이버 로그인] DNS IP 추가 관련 (업데이트)</div>
+                    </div>
+                    <div class="page_3_item_1 flex column">
+                        <div class="page_3_item_1_item_image"></div>
+                        <div class="page_3_item_1_item_text">[단축URL] 기존 생성된 me2.do 단축URL 참조 서비스 종료 안내</div>
+                    </div>
+                    <div class="page_3_item_1 flex column" style="margin-right: 0px;">
+                        <div class="page_3_item_1_item_image"></div>
+                        <div class="page_3_item_1_item_text">[네이버 로그인] DNS IP 추가 공지</div>
+                    </div>
+                </div>
+                <div class="page_3_item_2">VIEW ALL</div>
+            </div>
+        </div>
+
+        <div class="page_4 column center flex">
+            <div style="text-align: center;">이용약관 | 개인정보처리방침 | 제휴신청 | 개발자포럼 | 개발자채용 | NAVER D2 | NAVER Open Source</div>
+            <div style="text-align: center;">NAVER Copyright © NAVER Corp. All Rights Reserved.</div>
+        </div>
+    </main>
 </body>
 </html>

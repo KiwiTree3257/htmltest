@@ -1,31 +1,96 @@
 .flex {display: flex;}
 .around {justify-content: space-around;}
 .between {justify-content: space-between;}
+.center {justify-content: center;}
+.column {flex-direction: column}
+.textcenter {text-align: center;}
+
+body {
+    min-width: 1000px;
+}
 
 .menu {
-    background-color: seagreen;
+    background-color: rgb(255, 255, 255);
 }
 
-.menu_1 {
-    min-width: 600px;
-    background-color: red;
+.menu_left {
+    min-width: 650px;
+    background-color: rgb(255, 255, 255);
 }
 
-.menu_2 {
-    min-width: 300px;
-    background-color: red;
+.menu_right {
+    min-width: 380px;
+    background-color: rgb(255, 255, 255);
 }
 
 .menu_item {
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
 .dropmenu {
-    background-color: cadetblue;
+    background-color: rgb(255, 255, 255);
     display: none;
 }
 
 .hovergreen:hover {
-    color: greenyellow;
+    color: rgb(39, 190, 25);
+}
+
+.page_1 {
+    background: #babaff;
+    height: 534px;
+}
+
+.page_2 {
+    background: rgb(255, 255, 255);
+    height: 200px;
+}
+.page_2_item {
+    padding: 50px;
+    text-align: center;
+}
+
+.page_3 {
+    background: rgb(204, 204, 204);
+    height: 370px;
+}
+.page_3_item_1 {
+    width: 260px;
+    height: 244px;
+    margin-right: 10px;
+}
+.page_3_item_1_item_image {
+    height: 60%;
+    background-color: rgb(231, 231, 231);
+}
+.page_3_item_1_item_text {
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+.page_3_item_2 {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.page_4 {
+    background: rgb(255, 255, 255);
+    height: 90px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    padding-top: 43px;
 }

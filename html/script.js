@@ -3,17 +3,22 @@ const dropmenuElementsId = [
     {button: 'products', menu: 'dropmenu_products'},
     {button: 'documents', menu: 'dropmenu_documents'},
     {button: 'application', menu: 'dropmenu_application'},
+    {button: 'support', menu: 'dropmenu_support'}
 ]
-
+const dropmenuElements = [];
 for (let i = 0; i < dropmenuElementsId.length; i++) {
-    const button = document.getElementById(dropmenuElementsId[i].button);
-    const menu = document.getElementById(dropmenuElementsId[i].menu);
+    dropmenuElements[i] = {button: document.getElementById(dropmenuElementsId[i].button), menu: document.getElementById(dropmenuElementsId[i].menu)}
+}
 
-    console.log(button);
+for (let i = 0; i < dropmenuElements.length; i++) {
+    const button = dropmenuElements[i].button;
+    const menu = dropmenuElements[i].menu;
+
+    console.log(menu);
     button.addEventListener('mouseenter', function() {
         dropmenu.style.display = 'block';
-        for (let j = 0; j < dropmenuElementsId.length; j++) {
-            document.getElementById(dropmenuElementsId[j].menu).style.display = menu.id === dropmenuElementsId[j].menu ? 'block' : 'none';
+        for (let j = 0; j < dropmenuElements.length; j++) {
+            dropmenuElements[j].menu.style.display = menu.id === dropmenuElements[j].menu.id ? 'block' : 'none';
         }
     });
     button.addEventListener('mouseleave', function() {
