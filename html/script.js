@@ -14,7 +14,6 @@ for (let i = 0; i < dropmenuElements.length; i++) {
     const button = dropmenuElements[i].button;
     const menu = dropmenuElements[i].menu;
 
-    console.log(menu);
     button.addEventListener('mouseenter', function() {
         dropmenu.style.display = 'block';
         for (let j = 0; j < dropmenuElements.length; j++) {
@@ -25,3 +24,11 @@ for (let i = 0; i < dropmenuElements.length; i++) {
         dropmenu.style.display = 'none';
     });
 }
+
+dropmenu.addEventListener('mouseenter', function() {
+    dropmenu.style.display = 'block';
+});
+
+dropmenu.addEventListener('mouseleave', function() {
+    dropmenu.style.display = 'none';
+});

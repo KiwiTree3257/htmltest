@@ -67,7 +67,7 @@ body {
 .page_3_item_1_item_text {
     background-color: rgb(255, 255, 255);
     flex-grow: 1;
-    text-align: center;
+    text-align: start;
     padding: 10px;
 }
 .page_3_item_2 {
@@ -92,5 +92,5 @@ body {
 }
 
 main {
-    padding-top: 43px;
+    padding-top: 50px;
 }
